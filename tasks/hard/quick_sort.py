@@ -24,3 +24,15 @@
 
 ВРЕМЯ СОРТИРОВКИ: в среднем O(n log n)
 """
+
+
+def quicksort(A):
+    if len(A) <= 1:
+        return A
+    else:
+        q = random.choice(A)
+    l_A = [n for n in A if n < q]
+
+    e_A = [q] * A.count(q)
+    b_A = [n for n in A if n > q]
+    return quicksort(l_A) + e_A + quicksort(b_A)

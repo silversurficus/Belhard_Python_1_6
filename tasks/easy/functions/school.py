@@ -20,3 +20,25 @@ school_data = {
     '2a': 13,
     '2b': 30
 }
+
+
+def incr_students(SCHOOL_DATA, class_name):
+    SCHOOL_DATA[class_name] +=1
+
+
+def decr_students(SCHOOL_DATA, class_name):
+    if SCHOOL_DATA[class_name]-1>0:
+        SCHOOL_DATA[class_name] -=1
+
+
+def add_class(SCHOOL_DATA, class_name):
+    SCHOOL_DATA[class_name] = 0
+
+def remove_class(SCHOOL_DATA, class_name):
+    del SCHOOL_DATA[class_name]
+
+
+def calc_students(SCHOOL_DATA):
+    values=SCHOOL_DATA.values()
+    total = sum(values)
+    return total

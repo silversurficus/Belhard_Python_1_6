@@ -24,3 +24,12 @@ n = 6:
 55555
 666666
 """
+
+
+def triangular_sequence(n):
+    if n == 1:
+        return "1\n"
+    else:
+        return triangular_sequence(n - 1) + str(n) * n +"\n"
+
+print(triangular_sequence(3))
