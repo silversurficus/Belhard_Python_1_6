@@ -23,22 +23,23 @@ school_data = {
 
 
 def incr_students(SCHOOL_DATA, class_name):
-    SCHOOL_DATA[class_name] +=1
+    SCHOOL_DATA[class_name] += 1
 
 
 def decr_students(SCHOOL_DATA, class_name):
-    if SCHOOL_DATA[class_name]-1>0:
-        SCHOOL_DATA[class_name] -=1
+    if SCHOOL_DATA[class_name] - 1 > 0:
+        SCHOOL_DATA[class_name] -= 1
 
 
 def add_class(SCHOOL_DATA, class_name):
     SCHOOL_DATA[class_name] = 0
+
 
 def remove_class(SCHOOL_DATA, class_name):
     del SCHOOL_DATA[class_name]
 
 
 def calc_students(SCHOOL_DATA):
-    values=SCHOOL_DATA.values()
+    values = SCHOOL_DATA.values()
     total = sum(values)
     return total

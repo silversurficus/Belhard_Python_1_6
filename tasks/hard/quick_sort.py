@@ -25,6 +25,8 @@
 ВРЕМЯ СОРТИРОВКИ: в среднем O(n log n)
 """
 
+import random
+
 
 def quicksort(A):
     if len(A) <= 1:

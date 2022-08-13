@@ -22,4 +22,5 @@ def log_decorator(func):
 def hello(name):
     print(f"Привет, {name}")
 
+
 print(hello('chel'))

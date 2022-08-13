@@ -4,7 +4,8 @@
 """
 
 
-INT_VALUE=[1,2,3,4,5,6,7,8,9,10,1,2,3,123,1244,4,5,6,7,8, 9, 10]
+INT_VALUE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 123, 1244, 4, 5, 6, 7, 8, 9, 10]
+
 
 def yes_or_no(int_value):
     all_freq = {}
@@ -15,4 +16,6 @@ def yes_or_no(int_value):
             all_freq[i] = 1
             print("No")
     pass
+
+
 print(yes_or_no(INT_VALUE))

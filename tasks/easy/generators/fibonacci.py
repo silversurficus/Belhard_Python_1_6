@@ -16,8 +16,8 @@ next(fibonacci_gen) -> 8
 
 def fibonacci(fib_1=0, fib_2=1):
     while True:
-        yield max(fib_1,fib_2)
-        if fib_1>fib_2:
+        yield max(fib_1, fib_2)
+        if fib_1 > fib_2:
             fib_2 += fib_1
         else:
             fib_1 += fib_2

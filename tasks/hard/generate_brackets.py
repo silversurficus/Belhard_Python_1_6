@@ -42,6 +42,7 @@ def _generate_brackets(n, Open, close, s, ans):
     if (close < Open):
         _generate_brackets(n, Open, close + 1, s + ")", ans)
 
+
 def generate_brackets(n):
     ans = []
     _generate_brackets(n, 0, 0, "", ans)

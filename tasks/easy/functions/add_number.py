@@ -17,5 +17,5 @@ add_three(3) # 6
 
 def add_numb(x):
     def inner(y):
-        return x+y
+        return x + y
     return inner

@@ -10,3 +10,4 @@ def test_fibonacci():
     assert next(generator) == 5
     assert next(generator) == 8
 
+

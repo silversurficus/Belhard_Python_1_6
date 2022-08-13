@@ -8,9 +8,9 @@ False, если нет
 
 
 def check_number(n):
-  if n == 2 or n == 1:
-    return True
-  elif n%2 != 0:
-    return False
-  else:
-    return check_number(n/2.0)
+    if n == 2 or n == 1:
+        return True
+    elif n % 2 != 0:
+        return False
+    else:
+        return check_number(n / 2.0)

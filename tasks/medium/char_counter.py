@@ -23,4 +23,4 @@ def count_char(string_value):
             all_freq[i] += 1
         else:
             all_freq[i] = 1
-    return  all_freq
+    return all_freq
